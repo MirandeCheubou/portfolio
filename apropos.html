@@ -26,57 +26,82 @@
     </header>
 
     <div class="content-wrapper">
-        <a href="index.html" class="back-btn">← Retour au menu</a>
-        <h1>À Propos de moi</h1>
+        <h1 style="margin-top: 15px;">À Propos de moi</h1>
 
         <section class="card">
-            <h2>Expériences & Réalisations</h2>
+            <h2 style="margin-bottom: 15px;">Expériences & Réalisations</h2>
             <div style="border-left: 2px solid #334155; padding-left: 25px; margin-left: 10px;">
                 <div class="exp-item" style="margin-bottom: 25px;">
                     <span style="font-size: 0.85rem; color: var(--text-dim);">2024 • Projet Personnel</span>
-                    <h3 style="color: var(--accent);">Développeur Full-Stack (Site Dynamique)</h3>
-                    <p>Conception d'une application web interactive avec gestion de base de données. Focus sur l'expérience utilisateur et l'architecture client-serveur.</p>
+                    <h3 style="color: var(--accent);">Développeur Full-Stack </h3>
+                    <div style="margin-top: 15px; background: rgba(255,255,255,0.03); padding: 15px; border-radius: 10px; border: 1px solid rgba(56, 189, 248, 0.1);">
+                        <h4 style="color: var(--text); margin-bottom: 8px; font-size: 0.95rem;">Creation d'un blog d'archeologie</h4>
+                        <ul style="list-style: none; font-size: 0.9rem; color: var(--text-dim);">
+                            <li style="margin-bottom: 8px;">🔹 <strong>Architecture MVC :</strong> Séparation de la logique métier, de l'affichage et de l'accès aux données.</li>
+                            <li style="margin-bottom: 8px;">🔹 <strong>Gestion BDD (MySQL) :</strong> Modélisation d'une base relationnelle avec des tables pour les articles, les utilisateurs et les commentaires. Utilisation de requêtes <strong>SQL optimisées</strong> et de jointures.</li>
+                            <li style="margin-bottom: 8px;">🔹 <strong>Sécurité & Authentification :</strong> Mise en place d'un système d'inscription/connexion sécurisé avec hachage des mots de passe et protection contre les injections SQL via des <strong>requêtes préparées (PDO)</strong>.</li>
+                            <li>🔹 <strong>Système de Filtrage :</strong> Développement d'un moteur de recherche interne permettant de trier les découvertes archéologiques par époque ou par région.</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="exp-item">
+                    
+                    <h3 style="color: var(--text); margin-bottom: 10px; margin-top: 10px;">Étudiante en Informatique</h3>
                     <span style="font-size: 0.85rem; color: var(--text-dim);">2025 - Présent • BTS SIO</span>
-                    <h3 style="color: var(--text);">Étudiant en Informatique</h3>
                     <p>Approfondissement du cycle de vie logiciel, de la cybersécurité et de la maintenance d'infrastructures réseaux.</p>
                 </div>
             </div>
         </section>
 
         <section class="card">
-            <h2>🛠️ Compétences Techniques</h2>
-            <div class="grid">
-                <div class="skill-card">
-                    <h3>Développement Web</h3>
-                    <p>HTML5, CSS3, JavaScript, PHP</p>
-                    <button class="btn-details" onclick="toggleDetails(this)">Voir détails</button>
-                    <div class="skill-details">
-                        Capacité à créer des interfaces dynamiques et responsives. Maîtrise du backend avec PHP/MySQL pour la gestion de bases de données.
+            <h2 style="margin:15px;">🛠️ Compétences Techniques</h2>
+            <p style="color: var(--text-dim); margin-bottom: 25px;">Maîtrise des outils et technologies liés au développement logiciel et à l'infrastructure réseau.</p>
+            
+            <div class="grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+                
+                <div class="skill-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h3 style="font-size: 1.2rem; color: var(--text);">Développement Full-Stack</h3>
+                        <p style="color: var(--accent); font-weight: bold; margin-bottom: 10px; font-size: 0.85rem;">HTML5, CSS3, JS, PHP, MySQL</p>
+                        <div style="font-size: 0.85rem; color: var(--text-dim); line-height: 1.5;">
+                            Conception d'interfaces **responsives** et dynamiques. Gestion du Back-end en **PHP** avec une administration de base de données **MySQL** (CRUD). Sécurisation via requêtes préparées **PDO** et protection des données sensibles.
+                        </div>
                     </div>
                 </div>
 
-                <div class="skill-card">
-                    <h3>Réseau & Infrastructure</h3>
-                    <p>Active Directory, Windows Server, Cisco</p>
-                    <button class="btn-details" onclick="toggleDetails(this)">Voir détails</button>
-                    <div class="skill-details">
-                        Gestion des utilisateurs et des groupes via <strong>Active Directory</strong>. Configuration de services réseaux (DNS, DHCP).
+                <div class="skill-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h3>Réseau & Infrastructure</h3>
+                        <p style="color: var(--accent); font-weight: bold; margin-bottom: 10px; font-size: 0.85rem;">Active Directory, DNS, DHCP, Cisco, Windows Server</p>
+                        <div style="font-size: 0.85rem; color: var(--text-dim); line-height: 1.5;">
+                            Administration de services **Active Directory** (GPO, utilisateurs) et configuration **DNS/DHCP**. Initiation au routage et commutation sur équipements **Cisco** (VLANs).
+                        </div>
                     </div>
                 </div>
 
-                <div class="skill-card">
-                    <h3>Systèmes & Cloud</h3>
-                    <p>Linux, VMware, Docker</p>
-                    <button class="btn-details" onclick="toggleDetails(this)">Voir détails</button>
-                    <div class="skill-details">
-                        Installation de serveurs Debian/Ubuntu. Mise en place d'environnements virtualisés.
+                <div class="skill-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h3>Systèmes & Virtualisation</h3>
+                        <p style="color: var(--accent); font-weight: bold; margin-bottom: 10px; font-size: 0.85rem;">Linux, VMware, Docker</p>
+                        <div style="font-size: 0.85rem; color: var(--text-dim); line-height: 1.5;">
+                            Installation et sécurisation de serveurs **Linux (Debian)**. Mise en place d'environnements virtualisés sous **VMware** et initiation à la conteneurisation **Docker**.
+                        </div>
                     </div>
                 </div>
+
+                <div class="skill-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h3>Méthodologies & Outils</h3>
+                        <p style="color: var(--accent); font-weight: bold; margin-bottom: 10px; font-size: 0.85rem;">Git, Agile, VS Code</p>
+                        <div style="font-size: 0.85rem; color: var(--text-dim); line-height: 1.5;">
+                            Versionnage de code avec **Git**. Travail en mode projet avec les méthodes **Agile** et optimisation de la productivité sous **VS Code**.
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
-
+        
         <section class="card">
             <h2> Vers l'Intelligence Artificielle</h2>
             <div class="ia-focus">
@@ -95,6 +120,27 @@
             </div>
         </section>
     </div>
+
+    <footer>
+    <div class="footer-content">
+        <div class="footer-links">
+            <a href="index.html">Menu</a>
+            <a href="https://linkedin.com/in/mirande-cheubou" target="_blank">LinkedIn</a>
+            <a href="https://github.com/MirandeCheubou" target="_blank">GitHub</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="copyright">
+            © 2026 Mirande Cheubou | Étudiante BTS SIO SLAM
+        </div>
+
+        <div class="legal-mention">
+            <strong>Mentions légales :</strong> Ce site est un portfolio étudiant réalisé dans le cadre du BTS SIO. 
+            Hébergement : <strong>GitHub Inc.</strong> (88 Colin P. Kelly Jr St, San Francisco, CA 94107, USA). 
+            Les contenus et projets présentés sont la propriété de l'auteur. Aucun cookie traceur n'est utilisé.
+        </div>
+    </div>
+</footer>
 
     <script>
         // Fonction pour afficher/cacher les détails des compétences
