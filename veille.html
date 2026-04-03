@@ -2,13 +2,15 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Veille Technologique</title>
-   <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="nav.css">
+    <title>Veille Technologique | IA & Futur</title>
+    <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="nav.css">
+
 </head>
 <body>
     <div id="cursor"></div>
     <div id="cursor-blur"></div>
+
     <header>
         <nav>
             <a href="index.html" class="logo">PORTFOLIO</a>
@@ -24,21 +26,87 @@
     </header>
 
     <div class="content-wrapper">
-        <a href="styles.css" class="back-btn">← Retour au menu</a>
-        <h1>Veille Technologique</h1>
+        <h1 style="margin-top: 15px;">Veille Technologique</h1>
+        <p style="color: var(--accent); margin-bottom: 10px;">Sujet : L'évolution de l'Intelligence Artificielle et son impact sur le développement logiciel.</p>
 
-        <div class="card">
-            <h2>Sujet : L'Intelligence Artificielle en 2026</h2>
-            <p>Ma méthodologie de veille repose sur l'utilisation d'outils comme Feedly, Google Scholar et le suivi de comptes spécialisés sur LinkedIn.</p>
-            <hr style="border:0; border-top:1px solid #334155; margin:20px 0;">
-            <h3>Derniers articles suivis :</h3>
-            <ul>
-                <li>L'évolution des modèles de langage Large Language Models (LLM).</li>
-                <li>L'impact de l'IA sur le développement logiciel durable.</li>
-            </ul>
+        <section class="card" style="border-bottom: 2px solid var(--accent);">
+            <h2> Méthodologie de Veille</h2>
+            <p style="font-size: 0.9rem; color: var(--text-dim);">
+                Pour rester à jour, j'utilise des outils d'agrégation comme <strong>Feedly</strong>, je suis des experts sur <strong>LinkedIn</strong> et je consulte régulièrement des sources de référence comme <strong>Le Monde Informatique</strong> et <strong>ZDNet</strong>.
+            </p>
+        </section>
+
+        <div class="veille-container" style="display: flex; flex-direction: column; gap: 30px; margin-top: 10px;">
+            
+            <article class="card" style="margin: 0; margin-bottom:40px;  border-left: 3px solid var(--accent);">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
+                    <h3 style="color: var(--accent); margin: 0; font-size: 1.3rem;">L'IA générative et l'évolution des cycles de développement (SDLC)</h3>
+                    <span style="background: #334155; padding: 4px 12px; border-radius: 5px; font-size: 0.8rem; color: #fff;">Mars 2026</span>
+                </div>
+                
+                <div style="margin-bottom: 20px;">
+                    <strong style="color: var(--text); display: block; margin-bottom: 8px;"> Résumé détaillé :</strong>
+                    <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-dim); text-align: justify;">
+                        Cet article analyse l'intégration profonde des outils comme GitHub Copilot et les LLM (Large Language Models) dans le quotidien des développeurs. Il met en avant que l'IA n'est plus seulement une aide à l'auto-complétion, mais intervient désormais dans la <strong>refactorisation de code legacy</strong>, la génération automatique de documentation technique et la création de jeux de tests unitaires complexes. L'étude montre que si la vitesse d'écriture augmente, la charge mentale se déplace vers la <strong>revue de code</strong> et la validation d'architecture, car l'IA peut parfois introduire des hallucinations ou des vulnérabilités subtiles dans la logique métier.
+                    </p>
+                </div>
+
+                <div style="background: rgba(56, 189, 248, 0.05); padding: 15px; border-radius: 8px; border: 1px solid rgba(56, 189, 248, 0.1); margin-bottom: 15px;">
+                    <strong style="color: var(--accent); font-size: 0.9rem;"></strong> Analyse & Compétences :</strong>
+                    <p style="font-size: 0.9rem; color: var(--text); margin-top: 5px;">
+                        Pour mon profil SLAM, cela signifie que la maîtrise de la syntaxe est moins cruciale que la capacité à <strong>auditer</strong> un algorithme. J'ai compris l'importance de savoir "prompter" avec précision pour obtenir un code maintenable et sécurisé.
+                    </p>
+                </div>
+                <a href="https://www.lemondeinformatique.fr" target="_blank" style="color: var(--accent); font-size: 0.85rem; text-decoration: none; font-weight: bold;">Accéder à la source officielle →</a>
+            </article>
+
+            <article class="card" style="margin: 0; border-left: 3px solid #8b5cf6;">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 15px;">
+                    <h3 style="color: #a78bfa; margin-bottom:10px; font-size: 1.3rem;">Les enjeux de la Cybersécurité face aux IA conversationnelles</h3>
+                    <span style="background: #334155; padding: 4px 12px; border-radius: 5px; font-size: 0.8rem; color: #fff;">Février 2026</span>
+                </div>
+                
+                <div style="margin-bottom: 20px;">
+                    <strong style="color: var(--text); display: block; margin-bottom: 8px;"> Résumé détaillé :</strong>
+                    <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-dim); text-align: justify;">
+                        Le rapport souligne une augmentation des attaques de type <strong>Prompt Injection</strong>, où des utilisateurs malveillants manipulent les instructions de l'IA pour extraire des données confidentielles de la base de données. L'article détaille également les risques de fuites de données liés à l'envoi de secrets (clés API, mots de passe) dans les chats publics. En réponse, de nombreuses entreprises déploient des <strong>IA locales (On-premise)</strong> pour garantir que le patrimoine informationnel ne quitte jamais l'infrastructure réseau de l'organisation, imposant ainsi de nouvelles compétences en administration système pour les techniciens SIO.
+                    </p>
+                </div>
+
+                <div style="background: rgba(139, 92, 246, 0.05); padding: 15px; border-radius: 8px; border: 1px solid rgba(139, 92, 246, 0.1); margin-bottom: 15px;">
+                    <strong style="color: #a78bfa; font-size: 0.9rem;">💡 Analyse & Compétences :</strong>
+                    <p style="font-size: 0.9rem; color: var(--text); margin-top: 5px;">
+                        Cette veille m'a sensibilisé au fait que l'IA est un nouveau vecteur d'attaque. En tant que futur développeur, je dois intégrer des filtres de sécurité dès la conception (Privacy by Design) pour protéger les entrées utilisateurs traitées par des modèles d'IA.
+                    </p>
+                </div>
+                <a href="https://www.zdnet.fr" target="_blank" style="color: #a78bfa; font-size: 0.85rem; text-decoration: none; font-weight: bold;">Accéder à la source officielle →</a>
+            </article>
+
         </div>
     </div>
-       <script src="cursor.js" defer></script>
+
+    <footer>
+    <div class="footer-content">
+        <div class="footer-links">
+            <a href="index.html">Menu</a>
+            <a href="https://linkedin.com/in/mirande-cheubou" target="_blank">LinkedIn</a>
+            <a href="https://github.com/MirandeCheubou" target="_blank">GitHub</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="copyright">
+            © 2026 Mirande Cheubou | Étudiante BTS SIO SLAM
+        </div>
+
+        <div class="legal-mention">
+            <strong>Mentions légales :</strong> Ce site est un portfolio étudiant réalisé dans le cadre du BTS SIO. 
+            Hébergement : <strong>GitHub Inc.</strong> (88 Colin P. Kelly Jr St, San Francisco, CA 94107, USA). 
+            Les contenus et projets présentés sont la propriété de l'auteur. Aucun cookie traceur n'est utilisé.
+        </div>
+    </div>
+</footer>
+
+          <script src="cursor.js" defer></script>
 
 </body>
 </html>
